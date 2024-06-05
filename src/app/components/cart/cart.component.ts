@@ -17,4 +17,5 @@ export class CartComponent {
   onDeleteCart(id:number){
     this.idProduct.emit(id);
   }
+  
 }

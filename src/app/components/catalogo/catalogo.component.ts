@@ -18,5 +18,9 @@ export class CatalogoComponent {
 // Suggested code may be subject to a license. Learn more: ~LicenseLog:90695713.
    this.productEventEmitter.emit(product);
   }
+  @Output() idProduct= new EventEmitter();
+  onDeleteCart(id:number){
+    this.idProduct.emit(id);
+  }
 
 }
