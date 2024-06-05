@@ -4,7 +4,7 @@
     <h2>Catalogo de productos</h2>
     <app-catalogo [products]="products" (productEventEmitter)="onAddCart($event)" />
     @if (showCart) {
-        <app-cart-modal [items]="items" [total]="total" (idProduct)="onDeleteCart($event)" 
+        <app-cart-modal [items]="items" (idProduct)="onDeleteCart($event)" 
         (OpenEvernEmitter)="openCart()" />
     }
 
