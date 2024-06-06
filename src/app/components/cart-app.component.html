@@ -1,11 +1,4 @@
-<app-navbar [items]="items" (OpenEvernEmitter)="openCart()" />
-<div class="container">
-    
-    <h2>Catalogo de productos</h2>
-    <app-catalogo [products]="products" (productEventEmitter)="onAddCart($event)" />
-    @if (showCart) {
-        <app-cart-modal [items]="items" (idProduct)="onDeleteCart($event)" 
-        (OpenEvernEmitter)="openCart()" />
-    }
-
+<app-navbar [items]="items" [total]="total" />
+<div class="container"> 
+    <router-outlet/>
 </div>

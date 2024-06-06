@@ -12,8 +12,8 @@ export class ProductCartComponent {
   @Input () product!: Product;
 
   @Output() productEventEmitter : EventEmitter<Product> = new EventEmitter();
+  
   onAddCart(product:Product){
-// Suggested code may be subject to a license. Learn more: ~LicenseLog:75641518.
     this.productEventEmitter.emit(product);
   }
 }
